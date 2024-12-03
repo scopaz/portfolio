@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <!-- saved from url=(0023)https://localhost:7031/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>☱ My Portfolio - Portfolio</title>
-    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
-    <link rel="stylesheet" href="./index_files/site.css">
-    <link rel="stylesheet" href="./index_files/Portfolio.styles.css">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+            padding-top: 70px; /* To prevent navbar overlapping content */
+            background-color: #f8f9fa;
+        }
+        /* Navigation Bar */
+        .navbar {
+            padding: 1rem 2rem;
+            background-color: #343a40;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+            .navbar-nav .nav-link:hover {
+                color: #adb5bd !important;
+            }
+        /* Header Section */
+        .header-section {
+            background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(52, 58, 64, 0.7);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+            .header-content h1 {
+                font-size: 3.5rem;
+                font-weight: 700;
+            }
+
+            .header-content p {
+                font-size: 1.25rem;
+                margin-top: 20px;
+            }
+        /* Profile Section */
+        .profile-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+            .profile-section img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                border: 4px solid #343a40;
+            }
+        /* Skills Section */
+        .skills-section {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+            .skills-section h2 {
+                text-align: center;
+                margin-bottom: 40px;
+                color: #343a40;
+            }
+
+        .skill-icons i {
+            font-size: 3rem;
+            color: #17a2b8;
+            margin: 20px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+            .skill-icons i:hover {
+                transform: scale(1.2);
+                color: #138496;
+            }
+        /* Projects Section */
+        .projects-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+            .projects-section h2 {
+                text-align: center;
+                margin-bottom: 40px;
+                color: #343a40;
+            }
+
+        .project-type {
+            margin-bottom: 40px;
+        }
+
+            .project-type h4 {
+                font-size: 1.75rem;
+                margin-bottom: 15px;
+                color: #495057;
+            }
+
+            .project-type p {
+                font-size: 1rem;
+                color: #6c757d;
+            }
+
+        .examples-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+            .examples-list li {
+                background: #ffffff;
+                margin-bottom: 10px;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                transition: transform 0.2s, box-shadow 0.2s;
+                display: flex;
+                align-items: center;
+            }
+
+                .examples-list li:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+                }
+
+                .examples-list li img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+        /* Contact Section */
+        .contact-section {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+            .contact-section h2 {
+                text-align: center;
+                margin-bottom: 40px;
+                color: #343a40;
+            }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Footer */
+        .footer {
+            padding: 20px 0;
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+        }
+
+            .footer a {
+                color: #17a2b8;
+                margin: 0 10px;
+                font-size: 1.5rem;
+                transition: color 0.3s;
+            }
+
+                .footer a:hover {
+                    color: #138496;
+                }
+    </style>
 </head>
 <body cz-shortcut-listen="true">
     <header b-jrjsiumu31="">
@@ -31,256 +219,278 @@
     </header>
     <div b-jrjsiumu31="" class="container">
         <main b-jrjsiumu31="" role="main" class="pb-3">
-            
 
 
 
-    
-    <title>My Portfolio - Portfolio</title>
-    <!-- Responsive Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link href="./index_files/bootstrap(1).min.css" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link href="./index_files/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="./index_files/css2" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            scroll-behavior: smooth;
-            padding-top: 70px; /* To prevent navbar overlapping content */
-            background-color: #f8f9fa;
-        }
-        /* Navigation Bar */
-        .navbar {
-            padding: 1rem 2rem;
-            background-color: #343a40;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar-brand, .navbar-nav .nav-link {
-            color: #ffffff !important;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #adb5bd !important;
-        }
-        /* Header Section */
-        .header-section {
-            background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
-            color: #ffffff;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
-        .header-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(52, 58, 64, 0.7);
-        }
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
-        .header-content h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-        }
-        .header-content p {
-            font-size: 1.25rem;
-            margin-top: 20px;
-        }
-        /* Profile Section */
-        .profile-section {
-            padding: 60px 0;
-            text-align: center;
-        }
-        .profile-section img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            border: 4px solid #343a40;
-        }
-        /* Skills Section */
-        .skills-section {
-            padding: 60px 0;
-            background-color: #ffffff;
-        }
-        .skills-section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #343a40;
-        }
-        .skill-icons i {
-            font-size: 3rem;
-            color: #17a2b8;
-            margin: 20px;
-            transition: transform 0.3s, color 0.3s;
-        }
-        .skill-icons i:hover {
-            transform: scale(1.2);
-            color: #138496;
-        }
-        /* Projects Section */
-        .projects-section {
-            padding: 60px 0;
-            background-color: #f8f9fa;
-        }
-        .projects-section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #343a40;
-        }
-        .project-type {
-            margin-bottom: 40px;
-        }
-        .project-type h4 {
-            font-size: 1.75rem;
-            margin-bottom: 15px;
-            color: #495057;
-        }
-        .project-type p {
-            font-size: 1rem;
-            color: #6c757d;
-        }
-        .examples-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .examples-list li {
-            background: #ffffff;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: flex;
-            align-items: center;
-        }
-        .examples-list li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-        .examples-list li img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-        /* Contact Section */
-        .contact-section {
-            padding: 60px 0;
-            background-color: #ffffff;
-        }
-        .contact-section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #343a40;
-        }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        /* Footer */
-        .footer {
-            padding: 20px 0;
-            background-color: #343a40;
-            color: #ffffff;
-            text-align: center;
-        }
-        .footer a {
-            color: #17a2b8;
-            margin: 0 10px;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-        .footer a:hover {
-            color: #138496;
-        }
-    </style>
 
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm navbar-dark">
-        <a class="navbar-brand" href="https://localhost:7031/#header">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://localhost:7031/#header">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://localhost:7031/#profile">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://localhost:7031/#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://localhost:7031/#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://localhost:7031/#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <title>My Portfolio - Portfolio</title>
+            <!-- Responsive Meta Tag -->
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Bootstrap CSS -->
+            <link href="./index_files/bootstrap(1).min.css" rel="stylesheet">
+            <!-- Font Awesome for Icons -->
+            <link href="./index_files/all.min.css" rel="stylesheet">
+            <!-- Google Fonts -->
+            <link href="./index_files/css2" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Roboto', sans-serif;
+                    scroll-behavior: smooth;
+                    padding-top: 70px; /* To prevent navbar overlapping content */
+                    background-color: #f8f9fa;
+                }
+                /* Navigation Bar */
+                .navbar {
+                    padding: 1rem 2rem;
+                    background-color: #343a40;
+                    position: fixed;
+                    width: 100%;
+                    top: 0;
+                    z-index: 1000;
+                }
 
-    <!-- Header Section -->
-    <section id="header" class="header-section">
-        <div class="header-overlay"></div>
-        <div class="container header-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I am a passionate C# and .NET developer specializing in building scalable and efficient applications.</p>
-            <a href="https://localhost:7031/#projects" class="btn btn-primary mt-4">View My Work</a>
-        </div>
-    </section>
+                .navbar-brand, .navbar-nav .nav-link {
+                    color: #ffffff !important;
+                }
 
-    <!-- Profile Section -->
-    <section id="profile" class="profile-section">
-        <div class="container">
-            <img src="./index_files/1648145316724.jpg" alt="Profile Picture">
-            <h2>Yassine FARID</h2>
-            <p>A brief introduction about yourself, your experience, and your goals in software development.</p>
-        </div>
-    </section>
+                    .navbar-nav .nav-link:hover {
+                        color: #adb5bd !important;
+                    }
+                /* Header Section */
+                .header-section {
+                    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+                    color: #ffffff;
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                }
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="text-center skill-icons">
-                <i class="fab fa-dotnet"></i>
-                <i class="fas fa-database"></i>
-                <i class="fas fa-mobile-alt"></i>
-                <i class="fas fa-cloud"></i>
-                <i class="fas fa-code"></i>
-                <i class="fas fa-gamepad"></i>
-                <!-- Add more icons as needed -->
-            </div>
-        </div>
-    </section>
+                .header-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(52, 58, 64, 0.7);
+                }
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="text-center mb-5">My Projects</h2>
-            <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">ASP.NET Core Web API</h4>
-                                <p class="card-text">A RESTful API built using ASP.NET Core for a book store.</p>
-                                <img src="./index_files/400x200" alt="ASP.NET Core Web API Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                .header-content {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                    .header-content h1 {
+                        font-size: 3.5rem;
+                        font-weight: 700;
+                    }
+
+                    .header-content p {
+                        font-size: 1.25rem;
+                        margin-top: 20px;
+                    }
+                /* Profile Section */
+                .profile-section {
+                    padding: 60px 0;
+                    text-align: center;
+                }
+
+                    .profile-section img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        margin-bottom: 20px;
+                        border: 4px solid #343a40;
+                    }
+                /* Skills Section */
+                .skills-section {
+                    padding: 60px 0;
+                    background-color: #ffffff;
+                }
+
+                    .skills-section h2 {
+                        text-align: center;
+                        margin-bottom: 40px;
+                        color: #343a40;
+                    }
+
+                .skill-icons i {
+                    font-size: 3rem;
+                    color: #17a2b8;
+                    margin: 20px;
+                    transition: transform 0.3s, color 0.3s;
+                }
+
+                    .skill-icons i:hover {
+                        transform: scale(1.2);
+                        color: #138496;
+                    }
+                /* Projects Section */
+                .projects-section {
+                    padding: 60px 0;
+                    background-color: #f8f9fa;
+                }
+
+                    .projects-section h2 {
+                        text-align: center;
+                        margin-bottom: 40px;
+                        color: #343a40;
+                    }
+
+                .project-type {
+                    margin-bottom: 40px;
+                }
+
+                    .project-type h4 {
+                        font-size: 1.75rem;
+                        margin-bottom: 15px;
+                        color: #495057;
+                    }
+
+                    .project-type p {
+                        font-size: 1rem;
+                        color: #6c757d;
+                    }
+
+                .examples-list {
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+
+                    .examples-list li {
+                        background: #ffffff;
+                        margin-bottom: 10px;
+                        padding: 15px;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        transition: transform 0.2s, box-shadow 0.2s;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                        .examples-list li:hover {
+                            transform: translateY(-5px);
+                            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+                        }
+
+                        .examples-list li img {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 10px;
+                        }
+                /* Contact Section */
+                .contact-section {
+                    padding: 60px 0;
+                    background-color: #ffffff;
+                }
+
+                    .contact-section h2 {
+                        text-align: center;
+                        margin-bottom: 40px;
+                        color: #343a40;
+                    }
+
+                .contact-form {
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+                /* Footer */
+                .footer {
+                    padding: 20px 0;
+                    background-color: #343a40;
+                    color: #ffffff;
+                    text-align: center;
+                }
+
+                    .footer a {
+                        color: #17a2b8;
+                        margin: 0 10px;
+                        font-size: 1.5rem;
+                        transition: color 0.3s;
+                    }
+
+                        .footer a:hover {
+                            color: #138496;
+                        }
+            </style>
+
+
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand" href="https://localhost:7031/#header">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://localhost:7031/#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://localhost:7031/#profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://localhost:7031/#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://localhost:7031/#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://localhost:7031/#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Header Section -->
+            <section id="header" class="header-section">
+                <div class="header-overlay"></div>
+                <div class="container header-content">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>I am a passionate C# and .NET developer specializing in building scalable and efficient applications.</p>
+                    <a href="https://localhost:7031/#projects" class="btn btn-primary mt-4">View My Work</a>
+                </div>
+            </section>
+
+            <!-- Profile Section -->
+            <section id="profile" class="profile-section">
+                <div class="container">
+                    <img src="images/profil_picture.jpg" alt="Profile Picture">
+                    <h2>Yassine FARID</h2>
+                    <p>A brief introduction about yourself, your experience, and your goals in software development.</p>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section">
+                <div class="container">
+                    <h2>My Skills</h2>
+                    <div class="text-center skill-icons">
+                        <i class="fab fa-dotnet"></i>
+                        <i class="fas fa-database"></i>
+                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-cloud"></i>
+                        <i class="fas fa-code"></i>
+                        <i class="fas fa-gamepad"></i>
+                        <!-- Add more icons as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <div class="container">
+                    <h2 class="text-center mb-5">My Projects</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">ASP.NET Core Web API</h4>
+                                    <p class="card-text">A RESTful API built using ASP.NET Core for a book store.</p>
+                                    <img src="./index_files/400x200" alt="ASP.NET Core Web API Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>API Documentation</span>
@@ -289,17 +499,17 @@
                                             <img src="./index_files/40x40(1)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Postman Collection</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">Blazor WebAssembly App</h4>
-                                <p class="card-text">A modern web application using Blazor WebAssembly.</p>
-                                <img src="./index_files/400x200(1)" alt="Blazor WebAssembly App Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">Blazor WebAssembly App</h4>
+                                    <p class="card-text">A modern web application using Blazor WebAssembly.</p>
+                                    <img src="./index_files/400x200(1)" alt="Blazor WebAssembly App Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(2)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Demo Video</span>
@@ -308,17 +518,17 @@
                                             <img src="./index_files/40x40(3)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>GitHub Repository</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">Entity Framework Core</h4>
-                                <p class="card-text">Data access layer built with Entity Framework Core.</p>
-                                <img src="./index_files/400x200(2)" alt="Entity Framework Core Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">Entity Framework Core</h4>
+                                    <p class="card-text">Data access layer built with Entity Framework Core.</p>
+                                    <img src="./index_files/400x200(2)" alt="Entity Framework Core Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(4)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Code First Migration</span>
@@ -327,17 +537,17 @@
                                             <img src="./index_files/40x40(5)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Database Diagram</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">Xamarin Mobile App</h4>
-                                <p class="card-text">Cross-platform mobile application using Xamarin.</p>
-                                <img src="./index_files/400x200(3)" alt="Xamarin Mobile App Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">Xamarin Mobile App</h4>
+                                    <p class="card-text">Cross-platform mobile application using Xamarin.</p>
+                                    <img src="./index_files/400x200(3)" alt="Xamarin Mobile App Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(6)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>App Screenshot</span>
@@ -346,17 +556,17 @@
                                             <img src="./index_files/40x40(7)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>App Store Link</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">ASP.NET MVC Application</h4>
-                                <p class="card-text">A full-featured web application using ASP.NET MVC.</p>
-                                <img src="./index_files/400x200(4)" alt="ASP.NET MVC Application Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">ASP.NET MVC Application</h4>
+                                    <p class="card-text">A full-featured web application using ASP.NET MVC.</p>
+                                    <img src="./index_files/400x200(4)" alt="ASP.NET MVC Application Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(8)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Live Demo</span>
@@ -365,17 +575,17 @@
                                             <img src="./index_files/40x40(3)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Project Repository</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">SignalR Chat Application</h4>
-                                <p class="card-text">Real-time chat application using SignalR.</p>
-                                <img src="./index_files/400x200(5)" alt="SignalR Chat Application Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">SignalR Chat Application</h4>
+                                    <p class="card-text">Real-time chat application using SignalR.</p>
+                                    <img src="./index_files/400x200(5)" alt="SignalR Chat Application Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(9)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Live Chat</span>
@@ -384,17 +594,17 @@
                                             <img src="./index_files/40x40(10)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Source Code</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">Unit Testing in .NET</h4>
-                                <p class="card-text">Demonstration of unit testing best practices.</p>
-                                <img src="./index_files/400x200(6)" alt="Unit Testing in .NET Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">Unit Testing in .NET</h4>
+                                    <p class="card-text">Demonstration of unit testing best practices.</p>
+                                    <img src="./index_files/400x200(6)" alt="Unit Testing in .NET Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(11)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Test Cases</span>
@@ -403,17 +613,17 @@
                                             <img src="./index_files/40x40(12)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Testing Frameworks</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">Microservices with .NET</h4>
-                                <p class="card-text">A demonstration of microservices architecture using .NET.</p>
-                                <img src="./index_files/400x200(7)" alt="Microservices with .NET Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">Microservices with .NET</h4>
+                                    <p class="card-text">A demonstration of microservices architecture using .NET.</p>
+                                    <img src="./index_files/400x200(7)" alt="Microservices with .NET Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(13)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Service Overview</span>
@@ -422,17 +632,17 @@
                                             <img src="./index_files/40x40(5)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Architecture Diagram</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">Docker and .NET</h4>
-                                <p class="card-text">Containerized .NET applications using Docker.</p>
-                                <img src="./index_files/400x200(8)" alt="Docker and .NET Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">Docker and .NET</h4>
+                                    <p class="card-text">Containerized .NET applications using Docker.</p>
+                                    <img src="./index_files/400x200(8)" alt="Docker and .NET Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(14)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Dockerfile</span>
@@ -441,17 +651,17 @@
                                             <img src="./index_files/40x40(15)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Deployment Guide</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h4 class="card-title">Blazor Server App</h4>
-                                <p class="card-text">A Blazor Server application with real-time capabilities.</p>
-                                <img src="./index_files/400x200(9)" alt="Blazor Server App Image" class="img-fluid mb-3 rounded">
-                                <ul class="examples-list list-unstyled">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <h4 class="card-title">Blazor Server App</h4>
+                                    <p class="card-text">A Blazor Server application with real-time capabilities.</p>
+                                    <img src="./index_files/400x200(9)" alt="Blazor Server App Image" class="img-fluid mb-3 rounded">
+                                    <ul class="examples-list list-unstyled">
                                         <li class="mb-2 d-flex align-items-center">
                                             <img src="./index_files/40x40(10)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Source Code</span>
@@ -460,54 +670,53 @@
                                             <img src="./index_files/40x40(2)" alt="Example Image" class="example-image mr-2" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
                                             <span>Demo Video</span>
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name" required="">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email" required="">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required=""></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
+            </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>Connect with me on social media:</p>
-            <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-            <p class="mt-3">© 2024 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="./index_files/jquery-3.5.1.slim.min.js.télécharger"></script>
-    <script src="./index_files/popper.min.js.télécharger"></script>
-    <script src="./index_files/bootstrap.min.js.télécharger"></script>
-<script src="https://localhost:7031/_framework/aspnetcore-browser-refresh.js"></script>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <p>Connect with me on social media:</p>
+                    <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <p class="mt-3">© 2024 Your Name. All rights reserved.</p>
+                </div>
+            </footer>
+
+            <!-- Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
@@ -520,9 +729,7 @@
         </div>
     </footer>
 
-    <script src="./index_files/jquery.min.js.télécharger"></script>
-    <script src="./index_files/bootstrap.bundle.min.js.télécharger"></script>
-    <script src="./index_files/site.js.télécharger"></script>
+
 
     
 
